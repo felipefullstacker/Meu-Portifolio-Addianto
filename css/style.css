@@ -1,0 +1,124 @@
+/*Reset*/
+body{
+    font-family: 'Fira Sans', Arial, sans-serif;
+    background-color: #181818 ;
+    margin: 0px;
+    color: #141414;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header */
+.logo {
+  width: 10.3rem;
+  border-radius: 10rem;
+}
+
+.header{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.header-menu a{
+    text-shadow: 1px 2px 3px gray ;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.header-menu button{
+    width: 10rem;
+    background: #7B61FF;
+    font-weight: bold; 
+    text-shadow: 1px 2px 3px black ;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+.header-menu button:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem #000;
+}
+.header-menu button:active{
+    color: blue;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem #000;
+}
+
+/* Fim Header */
+
+/* Main */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px;
+    gap: 64px;
+    
+    width: 1440px;
+    height: 759px; 
+}
+
+.container h1,h2{
+    color: white; 
+}
+
+.textoprincipal{
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil{
+    width: 524px;
+    height: 559px;
+    border-radius: 16px;
+}
+
+.container2 h1{
+    color: white;
+}
+.projetos img{
+    width: 30rem;
+}
+
+.projetos h1{
+    display: flex;
+    justify-content: center;
+}
+
+.fotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn2{
+    margin-top: 3rem;
+    width: 10rem;
+    background: #7B61FF;
+    font-weight: bold; 
+    text-shadow: 1px 2px 3px black ;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+
+
