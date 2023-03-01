@@ -1,71 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat expedita culpa quod aliquam.."
-    />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
-    <script src="./app.js"></script>
-    
-    <title>Meu Portifólio</title>
-  </head>
-  <body>
-    <header class="header">
-      <img src="img/lflblogoalt.png" class="logo" />
-      <nav>
-        <ul class="header-menu">
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#formacao">Formação</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <button class="btn">DOWNLOAD CV</button>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="container">
-          <img src="./img/perfil.png" alt="minha foto de perfil" class="perfil"/>
-          <div class="textoprincipal">
-          <h1>
-            Olá, <span class="animated"></span>
-          </h1>
-          
-          <h2>
-            Desenvolvo pequenos projetos como Lading Pages utilizando apenas
-            HTML,CSS, Javascript e Bootstrap. Para CRM Managemant eu desenvolvo
-            aplicações em Apex.
-          </h2>
-        
-          <button class="btn2">Github</button>
-        </div>
-      </section>
 
-      <section id="experiencia" class="projetos">
-        <div class="container2">
-          <h1>Projetos</h1>
-          <span class="fotos">
-            <a href="https://meuportifoliolb-7f593.web.app"
-              ><img src="./img/fotoport.png" alt="foto portifolio"
-            /></a>
-            <a href=""
-              ><img src="./img/fotosales.png" alt="foto salesforce"
-            /></a>
-            <a href=""><img src="./img/fotorbs.png" alt="foto rbs" /></a>
-          </span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat expedita culpa quod aliquam.." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+  <script src="./app.js"></script>
+
+  <title>Meu Portifólio</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="navbar-container">
+      <img src="img/lflblogoalt.png" alt="" class="logo">
+      <h1 id="logotext">Felipe</h1>
+      <ul id="navbar-items">
+        <li>Sobre</li>
+        <li>Formação</li>
+        <li>Projetos</li>
+        <li>Contato</li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="header">
+    <div id="header-container">
+      <h1>Eu sou Luiz Felipe</h1>
+      <h3>Full Stack Developer</h2>
+        <span>
+          <i class="fa-brands fa-instagram fa-2x"></i>
+          <i class="fa-brands fa-whatsapp fa-2x"></i>
+          <i class="fa-brands fa-github fa-2x"></i>
+        </span>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobremim">
+      <div id="sobremim-container">
+        <!-- leve roubadinha, pq prototipei essa imagem no figma ja com box shadow e so exportei rsrs -->
+        <img src="./img/sobreimg 1.png" alt="">
+        <div>
+          <h4>SOBRE MIM</h4>
+          <h3>Eu sou Luiz Felipe</h3>
+          <p>Olá! Meu nome é Luiz Felipe Lima Bezerra e sou um desenvolvedor full-stack, com conhecimento em HTML, CSS,
+            JavaScript e Salesforce. Estou sempre em busca de novos desafios!</p>
+          <br>
+          <p>Passo boa parte do tempo no computador, buscando aprender novas tecnologias e domina-las. No tempo livro
+            gosto de jogar, ficar com as pessoas que gosto e ouvir música.</p>
         </div>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <section class="formacao">
+      <div class="headline2">Formação</div>
+      <div class="headline">Tecnólogo em</div>
+
+      <div id="formacao-container">
+
+        <div class="card1">
+          <div class="ADS">
+            <div class="adscontent">
+              <img src="img/Frame 1.png" alt="">
+              <h3>Análise e Desenvolvimento
+                de Sistemas</h3>
+            </div>
+            <p>Graduando em Análise e Desenvolvimento de Sistemas pela Universidade Estácio de Sá.</p>
+          </div>
+        </div>
+
+        <div class="card2">
+          <div class="RDC">
+            <div class="rdccontent">
+              <img src="img/Frame 2.png" alt="">
+              <h3>Redes de Computadores</h3>
+            </div>
+            <p>Ensino técnico em redes de computadores <br> pela EEEP MARIA GISELDA COELHO TEIXEIRA.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+      
+  </main>
+
+  <footer></footer>
+</body>
+
 </html>
