@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     new TypeIt(".animated", {
-        speed: 550,
-        strings: "eu sou o Luiz Felipe. Desenvolvedor Full Stack e Salesforce Jr.",
+        speed: 200,
+        strings: "Full Stack Developer",
         loop: true
     }).go()
 })
