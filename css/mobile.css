@@ -17,6 +17,13 @@
   .card1{
     height: 230px;
     }
+    
+    .card6{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        
+    }  
 }
 
 @media (max-width: 780px){
