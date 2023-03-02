@@ -8,7 +8,6 @@ Meu Portfólio
   Portfólio criado com o intuito de mostrar meus projetos e participar da avaliação da Addainto .
   </h5>
 
-## 🖥 IMG 
 
  ![Imagem do projeto finalizado](img/Screenshot_1.png)
  
