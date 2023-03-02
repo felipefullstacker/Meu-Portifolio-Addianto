@@ -1,7 +1,5 @@
 /*Fonte Google*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 /*Reset*/
 * {
@@ -11,24 +9,31 @@
   list-style: none;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
   color: #fff;
 }
-a{
+a {
   text-decoration: none;
+}
+
+html{
+  scroll-behavior: smooth;
+
 }
 
 /*Fim do Reset*/
 
-
-.logo{
+.logo {
   width: 70px;
 }
 
-.headline{
+.headline {
   color: #fff;
   font-size: 2.1rem;
   text-transform: uppercase;
@@ -38,7 +43,7 @@ a{
   padding-bottom: 50px;
 }
 
-.headline2{
+.headline2 {
   color: #fff;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -46,16 +51,15 @@ a{
   text-align: center;
   letter-spacing: 2px;
   padding-bottom: 50px;
+
 }
-
-
-/*navbar*/
-
-#logotext{
+ /* NavBar */
+#logotext {
   width: 100%;
   text-transform: uppercase;
   text-shadow: 1px 1px 3px blue;
-  }
+
+}
 
 #navbar {
   width: 100%;
@@ -64,7 +68,11 @@ a{
   height: 80px;
 }
 
-#navbar-container{
+#navbar a {
+  color: white;
+}
+
+#navbar-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -72,18 +80,30 @@ a{
   align-items: center;
 }
 
-#navbar-items{
+#navbar-items {
   display: flex;
   text-transform: uppercase;
 }
 
-#navbar-items li{
+#navbar-items li {
   display: flex;
   align-items: center;
   padding: 10px;
 }
 
-#header{
+#navbar-items li:hover {
+  text-shadow: 1px 3px 3px #000000;
+  background-color: #696a6b;
+  border-radius: 5px;
+  color: white;
+  transition: all .5s;
+}
+
+ /* Fim NavBar */
+
+ /* Header */
+
+#header {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -91,35 +111,34 @@ a{
   color: white;
   background: url(../img/bg-image\ 1.png);
 
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color;
 }
 
-#header-container{
+#header-container {
   text-align: center;
 
 }
 
-#header-container h1{
-font-size: 4.4rem;
+#header-container h1 {
+  font-size: 4.4rem;
 }
 
-#header-container h3{
+#header-container h3 {
   font-size: 1.89rem;
 }
 
-
-#header-container i{
+#header-container i {
   font-size: 1.7rem;
   color: black;
-  background-color: white; 
+  background-color: white;
   margin: 10px;
   margin-top: 17px;
   padding: 13px;
   border-radius: 100%;
 }
 
-#header-container i:hover{
+#header-container i:hover {
   cursor: pointer;
   color: white;
   background-color: #4e4e4e;
@@ -127,33 +146,47 @@ font-size: 4.4rem;
   border-radius: 60%;
   transition: all 0.45s;
 }
+ /* Fim */
+
 
 /* Sobre mim */
 
-#sobremim{
-width: 100%;
-background : #212121;
-color: #fff;
-padding: 50px;
+#sobremim {
+  width: 100%;
+  background: #212121;
+  color: #fff;
+  padding: 50px;
 }
 
-#sobremim-container{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-items: center;
+#sobremim-container {
+  display: flex;
   gap: 100px;
   padding: 15px;
   margin-bottom: 120px;
 }
 
-/* formacao */
-
-.formacao{
-  padding-top: 5rem;
-  background-color: #292929
+.iconesfofos{
+  display: inline-flex;
+  width: 120px;
+  padding: 30px;
 }
 
-#formacao-container{
+.sobremimlogo img{
+  display: none;
+}
+
+
+/*Fim Sobre mim */
+
+
+/* Formacao */
+
+.formacao {
+  padding-top: 5rem;
+  background-color: #292929;
+}
+
+#formacao-container {
   flex-wrap: wrap;
   margin-top: 60px;
   display: flex;
@@ -163,18 +196,17 @@ padding: 50px;
   padding: 15px;
 }
 
-.adscontent{
+.adscontent {
   display: flex;
   gap: 2rem;
 }
 
-.rdccontent{
+.rdccontent {
   display: flex;
   gap: 2rem;
 }
 
-
-.rdccontent h3{
+.rdccontent h3 {
   padding-top: 15px;
 }
 
@@ -186,7 +218,7 @@ padding: 50px;
   padding-top: 20px;
 }
 
-.card1{
+.card1 {
   color: #fff;
   background-color: #353842;
   border-radius: 15px;
@@ -198,7 +230,7 @@ padding: 50px;
 
 }
 
-.card2{
+.card2 {
   color: #fff;
   background-color: #353842;
   border-radius: 15px;
@@ -210,31 +242,26 @@ padding: 50px;
 
 }
 
+/* Formacao */
+
+/* Projetos */
 
 
-.projetos{
+.projetos {
   padding-top: 5rem;
-  background-color: #212121
-}
+  background-color: #212121;
 
-.card3{
-  margin: 0 auto;
-  width: 380px;
-  height: 406px;
-  left: 123px;
-  top: 1944px;
-  border-radius: 15px;
-
-  background-color: #353842;
 }
-.card-img img{
+ 
+ 
+.card-img img {
   width: 380px;
   height: 283px;
-  border-radius:15px 15px 0 0 ;
- 
+  border-radius: 15px 15px 0 0;
+
 }
 
-.btn{
+.btn {
   margin: 30px;
   color: white;
   display: flex;
@@ -246,18 +273,172 @@ padding: 50px;
   width: 104px;
   height: 41px;
 
+  background: #558fff;
+  border-radius: 6px;
+}
 
-  background: #558FFF;
+.btn2{
+  margin: 5px 20px 30px 30px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 18px;
+  gap: 10px;
+
+  width: 104px;
+  height: 41px;
+
+  background: #558fff;
   border-radius: 6px;
 }
 
 
-.curriculo{
+
+.curriculo {
   background-color: #292929;
   display: flex;
   justify-content: space-around;
   gap: 100px;
   padding: 15px;
 }
+
+
+.CV{
+  display: inline;
+  justify-content: center;
+}
+
+.cvcontent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.CV h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#projetos-container {
+  display: flex;
+  justify-items: center;
+  gap: 100px;
+  padding: 15px;
+  flex-wrap: wrap;
+
+}
+
+#projetos-container img {
+  width:380px;
+  border-radius: 15px 15px 0 0;
+}
+
+
+
+.card3 {
+  margin: 0 auto;
+  width: 380px;
+  height: 406px;
+  left: 123px;
+  top: 1944px;
+  border-radius: 15px;
+
+  background-color: #353842;
+}
+
+.card3 h3, p {
+  padding: 10px;
+}
+
+.card4 {
+  margin: 0 auto;
+  width: 380px;
+  height: 406px;
+  left: 123px;
+  top: 1944px;
+  border-radius: 15px;
+
+  background-color: #353842;
+}
+
+.card4 h3, p {
+  color: #fff;
+  padding: 10px;
+}
+
+.card5 {
+  margin: 0 auto;
+  width: 380px;
+  height: 406px;
+  left: 123px;
+  top: 1944px;
+  border-radius: 15px;
+
+  background-color: #353842;
+}
+
+.card5 h3, p {
+  padding: 10px;
+}
+
+/* Fim Projetos */
+
+/* Curriculo */
+
+#curriculo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardcv a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: auto;
+  width: 104px;
+  height: 41px;
+
+  background: #558fff;
+  border-radius: 6px;
+  
+
+}
+
+
+
+
+
+.card6{
+  width: 1000px;
+  height: 300px;
+  left: 123px;
+  top: 1944px;
+  border-radius: 15px;
+
+  background-color: #353842;
+}
+
+/* Fim Curriculo */
+
+/* Footer */
+
+#footer {
+  text-align: center;
+  background-color: #212121;
+}
+
+#footer img {
+  display: inline;
+  width: 85px;
+}
+
+/* Fim Footer */
+
 
 

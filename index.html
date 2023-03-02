@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat expedita culpa quod aliquam.." />
 
@@ -11,9 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mobile.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
-  <script src="./app.js"></script>
 
   <title>Meu Portifólio</title>
 </head>
@@ -21,13 +21,14 @@
 <body>
   <nav id="navbar">
     <div id="navbar-container">
-      <img src="img/lflblogoalt.png" alt="" class="logo">
+      <a href=""><img src="img/lflblogoalt.png" alt="" class="logo" ></a>
       <h1 id="logotext">Felipe</h1>
       <ul id="navbar-items">
-        <li>Sobre</li>
-        <li>Formação</li>
-        <li>Projetos</li>
-        <li>Contato</li>
+        <li><a href="#sobremim">Sobre</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#curriculo">Curriculo</a></li>
+       
       </ul>
     </div>
   </nav>
@@ -37,9 +38,9 @@
       <h1>Eu sou Luiz Felipe</h1>
       <h3>Full Stack Developer</h2>
         <span>
-          <i class="fa-brands fa-instagram fa-2x"></i>
-          <i class="fa-brands fa-whatsapp fa-2x"></i>
-          <i class="fa-brands fa-github fa-2x"></i>
+          <a href="https://www.instagram.com/felipelb_3/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+          <a href="https://wa.me/5585994088347" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+          <a href="https://github.com/felipefullstacker" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
         </span>
     </div>
   </header>
@@ -48,20 +49,31 @@
     <section id="sobremim">
       <div id="sobremim-container">
         <!-- leve roubadinha, pq prototipei essa imagem no figma ja com box shadow e so exportei rsrs -->
+        <div class="sobremimimagem">
         <img src="./img/sobreimg 1.png" alt="">
+        </div>
+        <div class="sobremimlogo">
+        <img src="./img/lflblogo.png" alt="">
+        </div>
         <div>
           <h4>SOBRE MIM</h4>
-          <h3>Eu sou Luiz Felipe</h3>
+          <h2 class="nomefofin">Eu sou Luiz Felipe</h3>
           <p>Olá! Meu nome é Luiz Felipe Lima Bezerra e sou um desenvolvedor full-stack, com conhecimento em HTML, CSS,
             JavaScript e Salesforce. Estou sempre em busca de novos desafios!</p>
           <br>
           <p>Passo boa parte do tempo no computador, buscando aprender novas tecnologias e domina-las. No tempo livro
             gosto de jogar, ficar com as pessoas que gosto e ouvir música.</p>
+            <div class="iconesfofos">
+            <span><img src="./img/icons8-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-48.png" alt=""></span>
+            <span><img src="./img/icons8-css3-48.png" alt=""></span>
+            <span><img src="./img/icons8-javascript-48.png" alt=""></span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Formação -->
+    <div id="formacao">
     <section class="formacao">
       <div class="headline2">Formação</div>
       <div class="headline">Tecnólogo em</div>
@@ -90,12 +102,69 @@
         </div>
       </div>
     </section>
+  </div>
+   
+          <div id="projetos">
+            <section class="projetos">
+              <div class="headline2">PORTFOLIO</div>
+              <div class="headline">Ultimos Projetos</div>
+        
+              <div id="projetos-container">
+        
+                <div class="card3">
+                  <div class="PORT">
+                    <div class="PORTcontent">
+                      <img src="./img/fotoport.png" alt="">
+                      <h3>Landing pages - Portifólio</h3>
+                    </div>
+                    <p>Meu primeiro portifólio feito com todo conhecimento absorvido no curso Origamid!</p>
+                    <a href="" class="btn">Conferir</a>
+                  </div>
+                </div>
 
- 
-      
+                <div class="card4">
+                  <div class="RBS">
+                    <div class="RBScontent">
+                      <img src="./img/fotorbs.png" alt="">
+                      <h3>Site de Hospedagens</h3>
+                    </div>
+                    <p>Home Page de um Site de Hospedagens com responsividade. Ainda em desenvolvimento....</p>
+                    <a href="" class="btn2">Conferir</a>
+                  </div>                 
+                </div>
+
+                <div class="card5">
+                  <div class="WAIT">
+                    <div class="WAITcontent">
+                      <img src="./img/travel-app-modal1 1.png" alt="">
+                      <h3>Em breve</h3>
+                    </div>
+                    <p>Em breve....</p>
+                    <a href="" class="btn">Conferir</a>
+                  </div>
+                </div>
+          </div>
+
+          <div id="curriculo">
+            <section class="curriculo">
+              <div id="curriculo-container">
+        
+                <div class="card6">
+                  <div class="cardcv">
+                    <div class="cvcontent">
+                       <div class="headline2">Download CV <i class="fa-regular fa-file-pdf"></i> </div>
+                      </div>
+                       <a href="./cv/Currículo Luiz Felipe Lima Bezerra.pdf" download="">DOWNLOAD</a>
+
+                 
   </main>
 
-  <footer></footer>
+  <footer id="footer">
+      <img src="img/lflblogoalt.png" alt="">
+      <p>Alguns direitos reservados © 2023 Luiz Felipe Lima Bezerra</p>
+  </footer>
+
+
 </body>
 
 </html>
