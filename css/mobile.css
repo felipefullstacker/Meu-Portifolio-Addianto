@@ -22,8 +22,14 @@
         display: flex;
         justify-content: center;
         width: 300px;
-        
     }  
+    .cards{
+    flex-wrap: wrap;
+  }
+  .conhecimentocontainer{
+    height: 90rem;
+  }
+  
 }
 
 @media (max-width: 780px){
@@ -56,9 +62,9 @@
     .cardcv a{
         display: flex;
         align-items: center;
-        justify-content: center;
-        
+        justify-content: center;    
     }
+    
     
     
   .sobremimlogo img{
@@ -76,6 +82,10 @@
 
   .card1{
   height: 230px;
+  }
+
+.cards{
+    flex-wrap: wrap;
   }
 }
 

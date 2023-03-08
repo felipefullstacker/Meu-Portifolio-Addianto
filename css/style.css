@@ -33,7 +33,10 @@ html{
   width: 70px;
 }
 
-.headline {
+.headline { 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   color: #fff;
   font-size: 2.1rem;
   text-transform: uppercase;
@@ -188,6 +191,7 @@ html{
 }
 
 #formacao-container {
+  
   flex-wrap: wrap;
   margin-top: 60px;
   display: flex;
@@ -196,6 +200,7 @@ html{
   gap: 100px;
   padding: 15px;
 }
+
 
 .adscontent {
   display: flex;
@@ -218,6 +223,7 @@ html{
 .ADS p {
   padding-top: 20px;
 }
+
 
 .card1 {
   color: #fff;
@@ -427,11 +433,56 @@ html{
 
 /* Fim Curriculo */
 
+/* 
+Habilidades */
+
+#conhecimento{
+  padding-top: 5rem;
+  background-color: #212121;
+}
+
+.conhecimentocontainer {
+  height: 39rem;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.cards{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  padding: 4rem;
+  border-radius: 0.6rem;
+  box-shadow: 1rem 1rem 1rem rgba(172, 18, 18, 0.267);
+  border: 3px solid red;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+  transition: 400ms;
+}
+
+.card:hover{
+  background-color: #363636;
+  box-shadow: 1rem 1rem 1rem rgba(161, 70, 70, 0.267);
+
+}
+
 /* Footer */
 
 #footer {
   text-align: center;
-  background-color: #212121;
+  background-color: #292929;
 }
 
 #footer img {
